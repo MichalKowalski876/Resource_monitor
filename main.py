@@ -74,10 +74,10 @@ def resource_usage():
         gpu_total = gpu_data['total']
         gpu_temperature = gpu_data['temperature']
     else:
-        gpu_usage = "N/A"
-        gpu_used = "N/A"
-        gpu_total = "N/A"
-        gpu_temperature = "N/A"
+        gpu_usage = 0
+        gpu_used = 0
+        gpu_total = 0
+        gpu_temperature = 0
 
     resource_file = {
         'c': psutil.cpu_percent(),  # CPU_usage
